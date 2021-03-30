@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "489312360222",
+    "project_id": "dr4-carlos-ferreira-tp3",
+    "storage_bucket": "dr4-carlos-ferreira-tp3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489312360222:android:940eb163b4f06927505b0f",
+        "android_client_info": {
+          "package_name": "com.example.dr4_carlos_ferreira_tp3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489312360222-r8tpr41pfcvgdq347bpo8o2cvjifrgva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuo3zPvTezCuv914Ip-OSthxthAXZcwg4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489312360222-r8tpr41pfcvgdq347bpo8o2cvjifrgva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

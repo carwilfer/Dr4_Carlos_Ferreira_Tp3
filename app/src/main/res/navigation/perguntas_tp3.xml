@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/perguntas_tp3"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.dr4_carlos_ferreira_tp3.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/signInActivity"
+        android:name="com.example.dr4_carlos_ferreira_tp3.SignInActivity"
+        android:label="activity_sign_in"
+        tools:layout="@layout/activity_sign_in" />
+    <activity
+        android:id="@+id/dashboardActivity"
+        android:name="com.example.dr4_carlos_ferreira_tp3.DashboardActivity"
+        android:label="activity_dashboard"
+        tools:layout="@layout/activity_dashboard" />
+    <fragment
+        android:id="@+id/formFiscalFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.fiscal.cadastro.FormFiscalFragment"
+        android:label="form_fiscal_fragment"
+        tools:layout="@layout/form_fiscal_fragment" />
+    <fragment
+        android:id="@+id/listFiscalFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.fiscal.list.ListFiscalFragment"
+        android:label="list_fiscal_fragment"
+        tools:layout="@layout/list_fiscal_fragment" >
+        <action
+            android:id="@+id/action_listFiscalFragment_to_formFiscalFragment"
+            app:destination="@id/formFiscalFragment" />
+        <action
+            android:id="@+id/action_listFiscalFragment_to_showFiscalFragment"
+            app:destination="@id/showFiscalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showFiscalFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.fiscal.show.ShowFiscalFragment"
+        android:label="show_fiscal_fragment"
+        tools:layout="@layout/show_fiscal_fragment" />
+    <fragment
+        android:id="@+id/formEmpresaFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.empresa.cadastro.FormEmpresaFragment"
+        android:label="form_empresa_fragment"
+        tools:layout="@layout/form_empresa_fragment" />
+    <fragment
+        android:id="@+id/listEmpresaFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.empresa.lista.ListEmpresaFragment"
+        android:label="list_empresa_fragment"
+        tools:layout="@layout/list_empresa_fragment" >
+        <action
+            android:id="@+id/action_listEmpresaFragment_to_formEmpresaFragment"
+            app:destination="@id/formEmpresaFragment" />
+        <action
+            android:id="@+id/action_listEmpresaFragment_to_perfilUsuarioFragment"
+            app:destination="@id/perfilUsuarioFragment" />
+        <action
+            android:id="@+id/action_listEmpresaFragment_to_listFiscalFragment"
+            app:destination="@id/listFiscalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cadastroUsuarioFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.usuario.cadastro.CadastroUsuarioFragment"
+        android:label="cadastro_usuario_fragment"
+        tools:layout="@layout/cadastro_usuario_fragment" />
+    <fragment
+        android:id="@+id/loginUsuarioFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.usuario.login.LoginUsuarioFragment"
+        android:label="login_usuario_fragment"
+        tools:layout="@layout/login_usuario_fragment" >
+        <action
+            android:id="@+id/action_loginUsuarioFragment_to_cadastroUsuarioFragment"
+            app:destination="@id/cadastroUsuarioFragment" />
+        <action
+            android:id="@+id/action_loginUsuarioFragment_to_perfilUsuarioFragment"
+            app:destination="@id/perfilUsuarioFragment" />
+        <action
+            android:id="@+id/action_loginUsuarioFragment_to_listEmpresaFragment"
+            app:destination="@id/listEmpresaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilUsuarioFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.usuario.perfil.PerfilUsuarioFragment"
+        android:label="perfil_usuario_fragment"
+        tools:layout="@layout/perfil_usuario_fragment" />
+    <fragment
+        android:id="@+id/sharedPreferencesFragment"
+        android:name="com.example.dr4_carlos_ferreira_tp3.ui.shared.SharedPreferencesFragment"
+        android:label="shared_preferences_fragment"
+        tools:layout="@layout/shared_preferences_fragment" />
+</navigation>
