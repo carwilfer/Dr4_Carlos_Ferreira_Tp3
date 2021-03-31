@@ -42,7 +42,7 @@ class ListEmpresaFragment : Fragment() {
                 RecyclerListEmpresa(
                     it
                 ) {
-                    AppUtil.empresaSelecionado = it
+                    AppUtil.empresaSelecionado = null
                     findNavController().navigate(R.id.formEmpresaFragment)
                 }
             recyclerViewListEmpresa.layoutManager = LinearLayoutManager(requireContext())

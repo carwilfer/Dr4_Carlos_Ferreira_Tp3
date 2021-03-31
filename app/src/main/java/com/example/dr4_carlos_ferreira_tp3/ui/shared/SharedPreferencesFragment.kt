@@ -57,7 +57,7 @@ class SharedPreferencesFragment : Fragment() {
             val sharedPrefs= EncryptedSharedPreferences.create(
                 "nome_arquivo",
                 txtArquivo,
-                applicationContext(),
+                requireContext(),
                 EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
                 EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
             )
